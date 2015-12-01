@@ -11,7 +11,7 @@
 		<div class="item-container-header">Display Settings</div>
 		<div class="item-container-content">
 			<label class="item">
-				Digital Printout
+				Digital Time Display
 				<input type="checkbox" class="item-toggle" name="toggle-1" checked>
 			</label>
 		</div>
@@ -29,13 +29,87 @@
 		<div class="item-container-header">Remaining Time Indicator</div>
 		<div class="item-container-content">
 			<label class="item">
-				<input type="range" class="item-slider" name="remCap-slider" value=60>
+				End Text Cap
+				<input type="range" class="item-slider" name="remCap-slider" max=90 min=10 value=60>
 				<div class="item-input-wrapper item-slider-text">
-					<input type="text" class="item-input" name="remCap-slider" value=60>
+					<input type="text" class="item-input" name="remCap-slider" max=90 min=10 value=60>
 				</div>
 			</label>
+			<label class="item">
+				Draw the class end pointer
+				<input type="checkbox" class="item-toggle" name="drawPointy" checked>
+			</label>
+			<label class="item">
+				Draw the class end text
+				<input type="checkbox" class="item-toggle" name="drawRemL" checked>
+			</label>
 		</div>
-	</div>
+		<div class="item-container-header">Class Schedule Settings</div>
+		<div class="item-container-content">
+			<label class="item">
+				Configure the schedule displayed on certain days
+			</label>
+			<label class="item">
+				Sunday
+				<select name="sunday-select" dir='rtl' class="item-select">
+					<option class="item-select-option" selected>None</option>
+					<option class="item-select-option">Short</option>
+					<option class="item-select-option">Regular</option>
+				</select>
+			</label>
+			<label class="item">
+				Monday
+				<select name="monday-select" dir='rtl' class="item-select">
+					<option class="item-select-option">None</option>
+					<option class="item-select-option">Short</option>
+					<option class="item-select-option" selected>Regular</option>
+				</select>
+			</label>
+			<label class="item">
+				Tuesday
+				<select name="tuesday-select" dir='rtl' class="item-select">
+					<option class="item-select-option">None</option>
+					<option class="item-select-option">Short</option>
+					<option class="item-select-option" selected>Regular</option>
+				</select>
+			</label>
+			<label class="item">
+				Wednesday
+				<select name="wednesday-select" dir='rtl' class="item-select">
+					<option class="item-select-option">None</option>
+					<option class="item-select-option" selected>Short</option>
+					<option class="item-select-option">Regular</option>
+				</select>
+			</label>
+			<label class="item">
+				Thursday
+				<select name="thursday-select" dir='rtl' class="item-select">
+					<option class="item-select-option">None</option>
+					<option class="item-select-option">Short</option>
+					<option class="item-select-option" selected>Regular</option>
+				</select>
+			</label>
+			<label class="item">
+				Friday
+				<select name="friday-select" dir='rtl' class="item-select">
+					<option class="item-select-option">None</option>
+					<option class="item-select-option">Short</option>
+					<option class="item-select-option" selected>Regular</option>
+				</select>
+			</label>
+			<label class="item">
+				Saturday
+				<select name="saturday-select" dir='rtl' class="item-select">
+					<option class="item-select-option" selected>None</option>
+					<option class="item-select-option">Short</option>
+					<option class="item-select-option">Regular</option>
+				</select>
+			</label>
+			<label class="item">
+				Lock Schedule (Locked normally during non-school days)
+				<input type="checkbox" class="item-toggle" name="schedLock" checked>
+			</label>
+		</div>
 </body>
 
 </html>
