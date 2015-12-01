@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html>
-	<body>
-		<p>Dooty Doot</p>
-	</body>
+
+<head>
+	<link rel='stylesheet' type='text/css' href='../css/slate.min.css'>
+</head>
+
+<body>
+	<script src='../js/slate.min.js'></script>
+	<div class="item-container">
+		<div class="item-container-header">Display Settings</div>
+		<div class="item-container-content">
+			<label class="item">
+				Digital Printout
+				<input type="checkbox" class="item-toggle" name="toggle-1" checked>
+			</label>
+		</div>
+		<div class="item-container-header">Connection Alert Settings</div>
+		<div class="item-container-content">
+			<label class="item">
+				Vibrate on disconnect
+				<input type="checkbox" class="item-toggle" name="conDcVibe" checked>
+			</label>
+			<label class="item">
+				Vibrate on reconnect
+				<input type="checkbox" class="item-toggle" name="conRcVibe">
+			</label>
+		</div>
+	</div>
+</body>
+
 </html>
