@@ -3,6 +3,7 @@
 
 <head>
 	<link rel='stylesheet' type='text/css' href='../css/slate.min.css'>
+	<script src='../js/vhsface.js'></script>
 </head>
 
 <body>
@@ -57,6 +58,9 @@
 					<option class="item-select-option" selected>None</option>
 					<option class="item-select-option">Short</option>
 					<option class="item-select-option">Regular</option>
+					<option class="item-select-option">Testing</option>
+					<option class="item-select-option">Custom 1</option>
+					<option class="item-select-option">Custom 2</option>
 				</select>
 			</label>
 			<label class="item">
@@ -65,6 +69,9 @@
 					<option class="item-select-option">None</option>
 					<option class="item-select-option">Short</option>
 					<option class="item-select-option" selected>Regular</option>
+					<option class="item-select-option">Testing</option>
+					<option class="item-select-option">Custom 1</option>
+					<option class="item-select-option">Custom 2</option>
 				</select>
 			</label>
 			<label class="item">
@@ -73,6 +80,9 @@
 					<option class="item-select-option">None</option>
 					<option class="item-select-option">Short</option>
 					<option class="item-select-option" selected>Regular</option>
+					<option class="item-select-option">Testing</option>
+					<option class="item-select-option">Custom 1</option>
+					<option class="item-select-option">Custom 2</option>
 				</select>
 			</label>
 			<label class="item">
@@ -81,6 +91,9 @@
 					<option class="item-select-option">None</option>
 					<option class="item-select-option" selected>Short</option>
 					<option class="item-select-option">Regular</option>
+					<option class="item-select-option">Testing</option>
+					<option class="item-select-option">Custom 1</option>
+					<option class="item-select-option">Custom 2</option>
 				</select>
 			</label>
 			<label class="item">
@@ -89,6 +102,9 @@
 					<option class="item-select-option">None</option>
 					<option class="item-select-option">Short</option>
 					<option class="item-select-option" selected>Regular</option>
+					<option class="item-select-option">Testing</option>
+					<option class="item-select-option">Custom 1</option>
+					<option class="item-select-option">Custom 2</option>
 				</select>
 			</label>
 			<label class="item">
@@ -97,6 +113,9 @@
 					<option class="item-select-option">None</option>
 					<option class="item-select-option">Short</option>
 					<option class="item-select-option" selected>Regular</option>
+					<option class="item-select-option">Testing</option>
+					<option class="item-select-option">Custom 1</option>
+					<option class="item-select-option">Custom 2</option>
 				</select>
 			</label>
 			<label class="item">
@@ -105,12 +124,38 @@
 					<option class="item-select-option" selected>None</option>
 					<option class="item-select-option">Short</option>
 					<option class="item-select-option">Regular</option>
+					<option class="item-select-option">Testing</option>
+					<option class="item-select-option">Custom 1</option>
+					<option class="item-select-option">Custom 2</option>
 				</select>
 			</label>
 			<label class="item">
 				Lock Schedule
 				<input type="checkbox" class="item-toggle" name="schedLock" checked>
 			</label>
+		</div>
+		<div class="item-container">
+			<div class="item-container-header">Custom Schedules</div>
+			<div class="item-container-content">
+				<div class="item tab-buttons">
+					<a name="customSwitch" class="tab-button active" onclick="setDisplay(1);">Custom 1</a>
+					<a name="customSwitch" class="tab-button" onclick="setDisplay(2);">Custom 2</a>
+				</div>
+			</div>
+			<div class="item-container-content" id="custom1">
+				<div class="item-dynamic-list">
+					<label class="item">Period 1
+						
+					</label>
+				</div>
+			</div>
+			<div class="item-container-content" id="custom2">
+				<div class="item-dynamic-list">
+					<label class="item">Period 2
+						
+					</label>
+				</div>
+			</div>
 		</div>
 		<div class="item-container">
 			<div class="button-container">
