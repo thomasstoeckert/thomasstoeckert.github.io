@@ -1,4 +1,4 @@
-function setDisplay(display){
+function setScheduleDisplay(display){
 	var custom1 = document.getElementById("custom1");
 	var custom2 = document.getElementById("custom2");
 	if(display === 1){
