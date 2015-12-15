@@ -7,24 +7,23 @@
 </head>
 
 <body>
-	<script src='../js/slate.min.js'></script>
 	<div class="item-container">
 		<div class="item-container-header">Display Settings</div>
 		<div class="item-container-content">
 			<label class="item">
 				Digital Time Display
-				<input type="checkbox" class="item-toggle" name="toggle-1" checked>
+				<input id="digitalToggle" type="checkbox" class="item-toggle" name="toggle-1" checked>
 			</label>
 		</div>
 		<div class="item-container-header">Connection Alert Settings</div>
 		<div class="item-container-content">
 			<label class="item">
 				Vibrate on disconnect
-				<input type="checkbox" class="item-toggle" name="conDcVibe" checked>
+				<input id="dcVibeToggle" type="checkbox" class="item-toggle" name="conDcVibe" checked>
 			</label>
 			<label class="item">
 				Vibrate on reconnect
-				<input type="checkbox" class="item-toggle" name="conRcVibe">
+				<input id="rcVibeToggle" type="checkbox" class="item-toggle" name="conRcVibe">
 			</label>
 		</div>
 		<div class="item-container-header">Remaining Time Indicator</div>
@@ -35,16 +34,16 @@
 			<label class="item">
 				<input type="range" class="item-slider" name="remCap-slider" max=90 min=10 value=60>
 				<div class="item-input-wrapper item-slider-text">
-					<input type="text" class="item-input" name="remCap-slider" max=90 min=10 value=60>
+					<input id="capSlider" type="text" class="item-input" name="remCap-slider" max=90 min=10 value=60>
 				</div>
 			</label>
 			<label class="item">
 				Draw the class end pointer
-				<input type="checkbox" class="item-toggle" name="drawPointy" checked>
+				<input id="pointyToggle" type="checkbox" class="item-toggle" name="drawPointy" checked>
 			</label>
 			<label class="item">
 				Draw the class end text
-				<input type="checkbox" class="item-toggle" name="drawRemL" checked>
+				<input id="endToggle" type="checkbox" class="item-toggle" name="drawRemL" checked>
 			</label>
 		</div>
 		<div class="item-container-header">Class Schedule Settings</div>
@@ -54,7 +53,7 @@
 			</label>
 			<label class="item">
 				Sunday
-				<select name="sunday-select" dir='rtl' class="item-select">
+				<select id="sunday" name="sunday-select" dir='rtl' class="item-select">
 					<option class="item-select-option" selected>None</option>
 					<option class="item-select-option">Short</option>
 					<option class="item-select-option">Regular</option>
@@ -65,7 +64,7 @@
 			</label>
 			<label class="item">
 				Monday
-				<select name="monday-select" dir='rtl' class="item-select">
+				<select id="monday" name="monday-select" dir='rtl' class="item-select">
 					<option class="item-select-option">None</option>
 					<option class="item-select-option">Short</option>
 					<option class="item-select-option" selected>Regular</option>
@@ -76,7 +75,7 @@
 			</label>
 			<label class="item">
 				Tuesday
-				<select name="tuesday-select" dir='rtl' class="item-select">
+				<select id="tuesday" name="tuesday-select" dir='rtl' class="item-select">
 					<option class="item-select-option">None</option>
 					<option class="item-select-option">Short</option>
 					<option class="item-select-option" selected>Regular</option>
@@ -87,7 +86,7 @@
 			</label>
 			<label class="item">
 				Wednesday
-				<select name="wednesday-select" dir='rtl' class="item-select">
+				<select id="wednesday" name="wednesday-select" dir='rtl' class="item-select">
 					<option class="item-select-option">None</option>
 					<option class="item-select-option" selected>Short</option>
 					<option class="item-select-option">Regular</option>
@@ -98,7 +97,7 @@
 			</label>
 			<label class="item">
 				Thursday
-				<select name="thursday-select" dir='rtl' class="item-select">
+				<select id="thursday" name="thursday-select" dir='rtl' class="item-select">
 					<option class="item-select-option">None</option>
 					<option class="item-select-option">Short</option>
 					<option class="item-select-option" selected>Regular</option>
@@ -109,7 +108,7 @@
 			</label>
 			<label class="item">
 				Friday
-				<select name="friday-select" dir='rtl' class="item-select">
+				<select id="friday" name="friday-select" dir='rtl' class="item-select">
 					<option class="item-select-option">None</option>
 					<option class="item-select-option">Short</option>
 					<option class="item-select-option" selected>Regular</option>
@@ -120,7 +119,7 @@
 			</label>
 			<label class="item">
 				Saturday
-				<select name="saturday-select" dir='rtl' class="item-select">
+				<select id="saturday" name="saturday-select" dir='rtl' class="item-select">
 					<option class="item-select-option" selected>None</option>
 					<option class="item-select-option">Short</option>
 					<option class="item-select-option">Regular</option>
@@ -131,7 +130,7 @@
 			</label>
 			<label class="item">
 				Lock Schedule
-				<input type="checkbox" class="item-toggle" name="schedLock" checked>
+				<input id="locktoggle" type="checkbox" class="item-toggle" name="schedLock" checked>
 			</label>
 		</div>
 		<!--
@@ -161,9 +160,12 @@
 		-->
 		<div class="item-container">
 			<div class="button-container">
-				<input type="button" class="item-button" value="SEND">
+				<input id="submitButton" type="button" class="item-button" value="SEND">
 			</div>
 		</div>
+	</div>
+	<script src="../js/slate.min.js"></script>
+	<script src="../js/confighandler.js"></script>
 </body>
 
 </html>
