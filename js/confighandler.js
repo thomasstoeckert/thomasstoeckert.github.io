@@ -1,4 +1,5 @@
-var $submitbutton = $('#submitButton')
+var $submitbutton = $('#submitButton');
+loadOptions();
 
 $submitbutton.on('click', function() {
 	console.log('Submit');
@@ -25,20 +26,21 @@ function loadOptions(){
 	var $saturday = $("#saturday");
 	
 	if(localStorage.digitalToggle){
-		$digitalToggle[0].checked = localStorage.getItem("digitalToggle");
-		$dcVibeToggle[0].checked = localStorage.getItem("dcVibeToggle");
-		$rcVibeToggle[0].checked = localStorage.getItem("rcVibeToggle");
-		$capSlider[0].value = localStorage.getItem("capSlider");
-		$pointyToggle[0].checked = localStorage.getItem("pointyToggle");
-		$endToggle[0].checked = localStorage.getItem("endToggle");
-		$lockToggle[0].checked = localStorage.getItem("lockToggle");
-		$sunday.val(localStorage.getItem("sunday"));
-		$monday.val(localStorage.getItem("monday"));
-		$tuesday.val(localStorage.getItem("tuesday"));
-		$wednesday.val(localStorage.getItem("wednesday"));
-		$thursday.val(localStorage.getItem("thursday"));
-		$friday.val(localStorage.getItem("friday"));
-		$saturday.val(localStorage.getItem("saturday"));
+		console.log("Loaded things");
+		$digitalToggle[0].checked = localStorage.digitalToggle;
+		$dcVibeToggle[0].checked = localStorage.dcVibeToggle;
+		$rcVibeToggle[0].checked = localStorage.rcVibeToggle;
+		$capSlider[0].value = localStorage.capSlider;
+		$pointyToggle[0].checked = localStorage.pointyToggle;
+		$endToggle[0].checked = localStorage.endToggle;
+		$lockToggle[0].checked = localStorage.lockToggle;
+		$sunday.val(localStorage.sunday);
+		$monday.val(localStorage.monday);
+		$tuesday.val(localStorage.tuesday);
+		$wednesday.val(localStorage.wednesday);
+		$thursday.val(localStorage.thursday);
+		$friday.val(localStorage.friday);
+		$saturday.val(localStorage.saturday);
 	}
 }
 
