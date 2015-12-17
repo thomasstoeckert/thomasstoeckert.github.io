@@ -25,6 +25,8 @@ function loadOptions(){
 	var $friday = $("#friday");
 	var $saturday = $("#saturday");
 	
+	console.log($sunday.val());
+	
 	if(localStorage.digitalToggle){
 		console.log("Loaded things");
 		$digitalToggle[0].checked = localStorage.digitalToggle;
