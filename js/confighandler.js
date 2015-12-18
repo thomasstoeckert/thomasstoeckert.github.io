@@ -9,91 +9,89 @@ $submitbutton.on('click', function() {
 });
 
 function loadOptions(){
-	var $digitalToggle = $("#digitalToggle");
-	var $dcVibeToggle = $("#dcVibeToggle");
-	var $rcVibeToggle = $("#rcVibeToggle");
-	var $capSlider = $("#capSlider");
-	var $pointyToggle = $("#pointyToggle");
-	var $endToggle = $("#endToggle");
-	var $lockToggle = $("#locktoggle");
+	var digitalToggle = document.getElementById('digitalToggle');
+	var dcVibeToggle = document.getElementById('dcVibeToggle');
+	var rcVibeToggle = document.getElementById('rcVibeToggle');
+	var capSlider = document.getElementById('capSlider');
+	var pointyToggle = document.getElementById('pointyToggle');
+	var endToggle = document.getElementById('endToggle');
+	var lockToggle = document.getElementById('locktoggle');
 	
-	var $sunday = $("#sunday");
-	var $monday = $("#monday");
-	var $tuesday = $("#tuesday");
-	var $wednesday = $("#wednesday");
-	var $thursday = $("#thursday");
-	var $friday = $("#friday");
-	var $saturday = $("#saturday");
+	var sunday = document.getElementById('sunday');
+	var monday = document.getElementById('monday');
+	var tuesday = document.getElementById('tuesday');
+	var wednesday = document.getElementById('wednesday');
+	var thursday = document.getElementById('thursday');
+	var friday = document.getElementById('friday');
+	var saturday = document.getElementById('saturday');
 	
-	console.log($sunday.val());
-	
-	if(localStorage.digitalToggle){
-		console.log("Loaded things");
-		$digitalToggle[0].checked = localStorage.digitalToggle;
-		$dcVibeToggle[0].checked = localStorage.dcVibeToggle;
-		$rcVibeToggle[0].checked = localStorage.rcVibeToggle;
-		$capSlider[0].value = localStorage.capSlider;
-		$pointyToggle[0].checked = localStorage.pointyToggle;
-		$endToggle[0].checked = localStorage.endToggle;
-		$lockToggle[0].checked = localStorage.lockToggle;
-		$sunday.val(localStorage.sunday);
-		$monday.val(localStorage.monday);
-		$tuesday.val(localStorage.tuesday);
-		$wednesday.val(localStorage.wednesday);
-		$thursday.val(localStorage.thursday);
-		$friday.val(localStorage.friday);
-		$saturday.val(localStorage.saturday);
+	if(localStorage["sunday"]){
+		console.log("Found local information");
+		digitalToggle.checked = localStorage["digitalToggle"];
+		dcVibeToggle.checked = localStorage["dcVibeToggle"];
+		rcVibeToggle.checked = localStorage["rcVibeToggle"];
+		capSlider.value = localStorage["capSlider"];
+		pointyToggle.checked = localStorage["pointyToggle"];
+		endToggle.checked = localStorage["endToggle"];
+		lockToggle.checked = localStorage["lockToggle"];
+		sunday.value = localStorage["sunday"];
+		monday.value = localStorage["monday"];
+		tuesday.value = localStorage["tuesday"];
+		wednesday.value = localStorage["wednesday"];
+		thursday.value = localStorage["thursday"];
+		friday.value = localStorage["friday"];
+		saturday.value = localStorage["saturday"];
 	}
 }
 
 function getAndStoreConfigData(){
-	var $digitalToggle = $("#digitalToggle");
-	var $dcVibeToggle = $("#dcVibeToggle");
-	var $rcVibeToggle = $("#rcVibeToggle");
-	var $capSlider = $("#capSlider");
-	var $pointyToggle = $("#pointyToggle");
-	var $endToggle = $("#endToggle");
-	var $lockToggle = $("#locktoggle");
+	var digitalToggle = document.getElementById('digitalToggle');
+	var dcVibeToggle = document.getElementById('dcVibeToggle');
+	var rcVibeToggle = document.getElementById('rcVibeToggle');
+	var capSlider = document.getElementById('capSlider');
+	var pointyToggle = document.getElementById('pointyToggle');
+	var endToggle = document.getElementById('endToggle');
+	var lockToggle = document.getElementById('locktoggle');
 	
-	var $sunday = $("#sunday");
-	var $monday = $("#monday");
-	var $tuesday = $("#tuesday");
-	var $wednesday = $("#wednesday");
-	var $thursday = $("#thursday");
-	var $friday = $("#friday");
-	var $saturday = $("#saturday");
+	var sunday = document.getElementById('sunday');
+	var monday = document.getElementById('monday');
+	var tuesday = document.getElementById('tuesday');
+	var wednesday = document.getElementById('wednesday');
+	var thursday = document.getElementById('thursday');
+	var friday = document.getElementById('friday');
+	var saturday = document.getElementById('saturday');
 	
 	var options = {
-		digitalToggle: $digitalToggle[0].checked,
-		dcVibeToggle: $dcVibeToggle[0].checked,
-		rcVibeToggle: $rcVibeToggle[0].checked,
-		capSlider: $capSlider[0].value,
-		pointyToggle: $pointyToggle[0].checked,
-		endToggle: $endToggle[0].checked,
-		lockToggle: $lockToggle[0].checked,
-		sunday: $sunday.val(),
-		monday: $monday.val(),
-		tuesday: $tuesday.val(),
-		wednesday: $wednesday.val(),
-		thursday: $thursday.val(),
-		friday: $friday.val(),
-		saturday: $saturday.val()
+		digitalToggle: digitalToggle.checked,
+		dcVibeToggle: dcVibeToggle.checked,
+		rcVibeToggle: rcVibeToggle.checked,
+		capSlider: capSlider.value,
+		pointyToggle: pointyToggle.checked,
+		endToggle: endToggle.checked,
+		lockToggle: lockToggle.checked,
+		sunday: sunday.value,
+		monday: monday.value,
+		tuesday: tuesday.value,
+		wednesday: wednesday.value,
+		thursday: thursday.value,
+		friday: friday.value,
+		saturday: saturday.value
 	}
 	
-	localStorage.setItem("digitalToggle", options.digitalToggle);
-	localStorage.setItem("dcVibeToggle", options.dcVibeToggle);
-	localStorage.setItem("rcVibeToggle", options.rcVibeToggle);
-	localStorage.setItem("capSlider", options.capSlider);
-	localStorage.setItem("pointyToggle", options.pointyToggle);
-	localStorage.setItem("endToggle", options.endToggle);
-	localStorage.setItem("lockToggle", options.lockToggle);
-	localStorage.setItem("sunday", options.sunday);
-	localStorage.setItem("monday", options.monday);
-	localStorage.setItem("tuesday", options.tuesday);
-	localStorage.setItem("wednesday", options.wednesday);
-	localStorage.setItem("thursday", options.thursday);
-	localStorage.setItem("friday", options.friday);
-	localStorage.setItem("saturday", options.saturday);
+	localStorage["digitalToggle"] = options["digitalToggle"];
+	localStorage["dcVibeToggle"] = options["dcVibeToggle"];
+	localStorage["rcVibeToggle"] = options["rcVibeToggle"];
+	localStorage["capSlider"] = options["capSlider"];
+	localStorage["pointyToggle"] = options["pointyToggle"];
+	localStorage["endToggle"] = options["endToggle"];
+	localStorage["lockToggle"] = options["lockToggle"];
+	localStorage["sunday"] = options["sunday"];
+	localStorage["monday"] = options["monday"];
+	localStorage["tuesday"] = options["tuesday"];
+	localStorage["wednesday"] = options["wednesday"];
+	localStorage["thursday"] = options["thursday"];
+	localStorage["friday"] = options["friday"];
+	localStorage["saturday"] = options["saturday"];
 	
 	return options;
 }
