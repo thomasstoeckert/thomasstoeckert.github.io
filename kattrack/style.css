@@ -1,0 +1,32 @@
+#outer{
+	display:table;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	top: 0;
+	left: 0;
+	margin: 0;
+}
+#middle{
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0;
+	margin: 0;
+}
+#inner{
+	width: 60%;
+	margin: 0 auto;
+}
+#right{
+	text-align: right;
+}
+#katspan{
+	font-size: 18pt
+}
+body{
+	font-family: Verdana, Geneva, sans-serif;
+}
+h1{
+	text-align:center;
+}
