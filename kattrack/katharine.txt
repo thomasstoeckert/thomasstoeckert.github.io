@@ -32,3 +32,5 @@ That technically works, but is not a good idea.
 Is there context for that?
 Huh. Something went bork.
 Ritual sacrifice is only on Tuesdays? That’s not so bad.
+I don’t buy into snooze mechanisms.
+“questionable” means “something that causes errors.”
