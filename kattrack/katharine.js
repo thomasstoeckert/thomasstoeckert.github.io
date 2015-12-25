@@ -11,9 +11,13 @@ request.onload = function() {
 
     // get a random index (line number)
     var randomLineIndex = Math.floor( Math.random() * fileContentLines.length );
-
+    var quote = fileContentLines[randomLineIndex];
+    if (quote.charAt(0) == "*"){
+        console.log("Found a star: " + quote);
+        quote = quote.replace("*", " ");
+    }
     // add the random line in a div
-    document.getElementById( 'katquote' ).textContent = fileContentLines[randomLineIndex];
+    document.getElementById( 'katquote' ).textContent = quote
 };
 request.open( 'GET', 'katharine.txt', true );
 request.send();
