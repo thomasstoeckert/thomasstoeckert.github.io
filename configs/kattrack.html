@@ -1,18 +1,46 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel='stylesheet' type='text/css' href='../css/slate.min.css'>
-	</head>
-	<body>
-		<div class="item-container">
-			<div class="item-container-header">KatQuote</div>
-			<!-- Put configuration in here -->
-			<div class="item-container">
-				<div class="button-container">
-					<input id="submitButton" type="button" class="item-button" value="SEND">
-				</div>
-			</div>
-		</div>
-		<script src="../js/slate.min.js"></script>
-	</body>
-</html> 
+
+<head>
+    <link rel='stylesheet' type='text/css' href='../css/slate.min.css'>
+    <link rel='stylesheet' type='text/css' href='../css/kattrackconfig.css'>
+</head>
+
+<body>
+    <div class="item-container">
+        <div class="item-container-header" id="configheader">KatQuote Config</div>
+        <div class="item-container-content">
+            <label class="item">
+                Scheme
+                <select name="sceme-select" dir='rtl' class="item-select">
+                    <option class="item-select-option">Cowboy</option>
+                    <option class="item-select-option">Hyperactive</option>
+                    <option class="item-select-option">Bookworm</option>
+                    <option class="item-select-option" selected>Speedy</option>
+                    <option class="item-select-option">Fancy</option>
+                    <option class="item-select-option">Shy</option>
+                </select>
+            </label>
+            <label class="item">
+                Vibrate on Disconnect
+                <input type="checkbox" class="item-toggle" name="vibeToggle">
+            </label>
+            <label class="item">
+                Fetch Quotes
+                <input type="checkbox" class="item-toggle" name="fetchToggle" checked>
+            </label>
+            <label class="item">
+                Display Quotes
+                <input type="checkbox" class="item-toggle" name="displayToggle" checked>
+            </label>
+        </div>
+        <div class="item-container">
+            <div class="button-container">
+                <input id="submitButton" type="button" class="item-button" value="SEND">
+            </div>
+        </div>
+    </div>
+    <script src="../js/slate.min.js"></script>
+</body>
+
+</html>
