@@ -1,9 +1,160 @@
-<html>
-    <head>
-        <title>Under Construction</title>
-    </head>
-    <body>
-        <h1>Pardon our pixie dust.</h1>
-        <p>My site is under construction, check back later</p>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <script src="https://use.fontawesome.com/18e879b086.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Under Construction</title>
+</head>
+
+<body>
+    <div class="bgimg w3-display-container w3-text-white">
+        <div class="w3-display-middle w3-animate-opacity">
+            <img src="https://github.com/thomasstoeckert.png" class="w3-circle w3-center me" />
+            <div class="w3-card w3-white w3-round-large contentbox">
+                <h1 class="w3-center">Thomas Allen Stoeckert</h1>
+                <p id="personal" class="w3-center"> He's <span id="age">17</span> years old.</p>
+
+                <h3 class="hHeader" onclick="accordionHandler('idDone')">He's made</h3>
+                <div class="divDone w3-container ts-accordion" id="idDone">
+                    <div class="w3-content w3-display-container">
+                        <div class="w3-card-4 ts-createdSlides" onclick="cardClicky('https://apps.getpebble.com/applications/5939fe5d0dfc32af610003df')">
+                            <img src="images/pebble-frl.png">
+                            <div class="w3-container w3-center">
+                                <p>Disney Parks Fuel-Rod Locator for Pebble</p>
+                            </div>
+                        </div>
+                        <div class="w3-card-4 ts-createdSlides" onclick="cardClicky('http://thomas.stoeckert.us')">
+                            <img src="images/recursion.png">
+                            <div class="w3-container w3-center">
+                                <p>This Site</p>
+                            </div>
+                        </div>
+                        <div class="w3-card-4 ts-createdSlides" onclick="cardClicky('http://thomas.stoeckert.us/getliftoff')">
+                            <img src="images/pebble-liftoff.png">
+                            <div class="w3-container w3-center">
+                                <p>Liftoff for Pebble</p>
+                            </div>
+                        </div>
+                        <div class="w3-card-4 ts-createdSlides" onclick="cardClicky('https://apps.getpebble.com/applications/575899eb9bcb701a3e000004')">
+                            <img src="images/pebble-time-cruise.png">
+                            <div class="w3-container w3-center">
+                                <p>Time Cruise for Pebble</p>
+                            </div>
+                        </div>
+                        <div class="w3-card-4 ts-createdSlides" onclick="cardClicky('http://thomas.stoeckert.us/kattrack')">
+                            <img src="images/kattrack.png">
+                            <div class="w3-container w3-center">
+                                <p>Katharine Quotes</p>
+                            </div>
+                        </div>
+                        <div class="w3-card-4 ts-createdSlides" onclick="cardClicky('https://apps.getpebble.com/applications/569a3c6f8b7337e75400003e')">
+                            <img src="images/pebble-kattrack.png">
+                            <div class="w3-container w3-center">
+                                <p>Katharine Quotes for Pebble</p>
+                            </div>
+                        </div>
+                        <button class="w3-button w3-black w3-display-left w3-opacity-min" onclick="pageCreatedSlideshow(-1)">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right w3-opacity-min" onclick="pageCreatedSlideshow(1)">&#10095;</button>
+                    </div>
+                </div>
+
+                <h3 class="hHeader" onclick="accordionHandler('idSaid')">He's said</h3>
+                <div class="divSaid w3-container ts-accordion" id="idSaid">
+                    <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/278117287&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+                </div>
+                <h3 class="hHeader" onclick="accordionHandler('idLearned')">He's learned</h3>
+                <div class="divSaid w3-container ts-accordion" id="idLearned">
+                    <p>C, through the Pebble SDK</p>
+                    <p>JavaScript, through both Pebble and this site</p>
+                    <p>Python and Flask, through making several web applications</p>
+                    <p>Java, through Android development</p>
+                    <p>BYOND, through Space Station 13</p>
+                </div>
+
+                <h3 class="hHeader" onclick="accordionHandler('idHear')">He wants to hear from you</h3>
+                <div class="divHear w3-container ts-accordion" id="idHear">
+                    <a href="https://github.com/thomasstoeckert" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                    <a href="https://soundcloud.com/the-voice-of-your-thoughts" target="_blank"><i class="fa fa-soundcloud fa-2x" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/thomasglacierglacier" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/glacier.glacier" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                    <a href="https://www.snapchat.com/add/glacierglacier" target="_blank"><i class="fa fa-snapchat-ghost fa-2x" aria-hidden="true"></i></a>
+                    <a href="http://steamcommunity.com/id/thomasstoeckert/" target="_blank"><i class="fa fa-steam fa-2x" aria-hidden="true"></i></a>
+                    <a href="mailto:thomas@stoeckert.us?Subject=From%20Your%20Site" target="_top"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+                </div>
+                <a class="theGreatExpando" href="#" onclick="accordionHandler('all')">expand all</a>
+                <a class="theGreatCollapso" href="#" onclick="accordionHandler('close_all')">close all</a>
+            </div>
+        </div>
+    </div>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script>
+        window.onload = function () {
+            //Just keeping my age up to date
+            var birthdate = new Date(1999, 10, 18);
+            var ageDate = new Date(Date.now() - birthdate.getTime());
+            $("span#age").text(Math.abs(ageDate.getUTCFullYear() - 1970));
+        }
+
+        function cardClicky(url){
+            window.open(url, "_blank");
+        }
+
+        function accordionHandler(targetId) {
+            if (targetId === "all") {
+                var accordions = $("div.ts-accordion");
+                accordions.addClass("ts-openAccordion");
+                accordions.slideDown();
+                return;
+            } else if (targetId === "close_all") {
+                var accordions = $("div.ts-openAccordion");
+                accordions.removeClass("ts-openAccordion");
+                accordions.slideUp();
+                return;
+            }
+            var target = $("#" + targetId);
+            var openAccordions = $("div.ts-openAccordion:not(#" + targetId + ")");
+            var targetIsOpen = target.hasClass("ts-openAccordion");
+            if (openAccordions.length) {
+                openAccordions.slideUp();
+                openAccordions.removeClass("ts-openAccordion");
+            }
+            if (targetIsOpen) {
+                //We're gonna close it, so remove the open class
+                target.removeClass("ts-openAccordion");
+            } else {
+                //We're gonna open it, so add the open class
+                target.addClass("ts-openAccordion");
+            }
+            target.slideToggle();
+        }
+
+        var createdSlideIndex = 1;
+        createdSlideshowDivs(1);
+
+        function pageCreatedSlideshow(n) {
+            createdSlideshowDivs(createdSlideIndex += n);
+        }
+
+        function createdSlideshowDivs(n) {
+            var i;
+            var slides = $(".ts-createdSlides");
+            if (n > slides.length) {
+                createdSlideIndex = 1
+            }
+            if (n < 1) {
+                createdSlideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[createdSlideIndex - 1].style.display = "block";
+        }
+    </script>
+</body>
+
 </html>
