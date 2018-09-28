@@ -131,10 +131,21 @@
         }
 
         function cardClicky(url){
+            ga('send', 'event', {
+                eventCategory: 'Outbound Link',
+                eventAction: "click",
+                eventLabel: url,
+                transport: 'beacon'
+            });
             window.open(url, "_blank");
         }
 
         function accordionHandler(targetId) {
+            ga('send', 'event', {
+                eventCategory: 'accordion',
+                eventAction: 'click',
+                eventAction: targetId
+            });
             if (targetId === "all") {
                 var accordions = $("div.ts-accordion");
                 accordions.addClass("ts-openAccordion");
