@@ -44,6 +44,7 @@
             <div class="w3-card w3-white w3-round-large contentbox">
                 <h1 class="w3-center">Thomas Allen Stoeckert</h1>
                 <p id="personal" class="w3-center"> He's <span id="age">18</span> years old.</p>
+                <a href="https://drive.google.com/file/d/1Dzg_BiSkb6Ly2CqKga5WDZkgVLYWWEU_/view?usp=sharing" target="_blank">download resume</a>
 
                 <h3 class="hHeader" onclick="accordionHandler('idDone')">He's made</h3>
                 <div class="divDone w3-container ts-accordion" id="idDone">
@@ -128,8 +129,6 @@
                 </div>
                 <a class="theGreatExpando" href="#" onclick="accordionHandler('all')">expand all</a>
                 <a class="theGreatCollapso" href="#" onclick="accordionHandler('close_all')">close all</a>
-                <br />
-                <a href="https://drive.google.com/file/d/1Dzg_BiSkb6Ly2CqKga5WDZkgVLYWWEU_/view?usp=sharing" target="_blank">download resume</a>
             </div>
         </div>
     </div>
@@ -140,7 +139,7 @@
             var birthdate = new Date(1999, 10, 18);
             var ageDate = new Date(Date.now() - birthdate.getTime());
             $("span#age").text(Math.abs(ageDate.getUTCFullYear() - 1970));
-            accordionHandler('all');
+            accordionHandler('idHear');
         }
 
         function cardClicky(url){
