@@ -126,9 +126,10 @@
                     <a href="mailto:thomas@stoeckert.us?Subject=From%20Your%20Site" target="_top"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
                     <a href="https://www.linkedin.com/in/thomasstoeckert/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
                 </div>
-                <a href="https://drive.google.com/file/d/1Dzg_BiSkb6Ly2CqKga5WDZkgVLYWWEU_/view?usp=sharing" target="_blank">Download Resume</a>
                 <a class="theGreatExpando" href="#" onclick="accordionHandler('all')">expand all</a>
                 <a class="theGreatCollapso" href="#" onclick="accordionHandler('close_all')">close all</a>
+                <br />
+                <a href="https://drive.google.com/file/d/1Dzg_BiSkb6Ly2CqKga5WDZkgVLYWWEU_/view?usp=sharing" target="_blank">download resume</a>
             </div>
         </div>
     </div>
@@ -139,6 +140,7 @@
             var birthdate = new Date(1999, 10, 18);
             var ageDate = new Date(Date.now() - birthdate.getTime());
             $("span#age").text(Math.abs(ageDate.getUTCFullYear() - 1970));
+            accordionHandler('all');
         }
 
         function cardClicky(url){
