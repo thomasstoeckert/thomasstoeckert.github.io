@@ -1,71 +1,47 @@
 body,
-h1,
-h3 {
-    font-family: "Raleway", sans-serif
-}
-
-body,
 html {
     height: 100%;
 }
 
 body {
+    line-height: 1.25;
     background-image: url('../images/grand-canyon.jpg');
     background-attachment: fixed;
     background-position: center;
     background-size: cover
 }
 
-.bgimg {
+#backgroundImageContainer {
     min-height: 100%;
 }
 
-.ts-toppadded {
-    margin-top: 5%;
+#content {
+    padding: 1.5vw;
+    padding-top: 5vh;
 }
 
-.ts-accordion {
-    display: none;
-}
-
-div.divDone {
-    overflow: auto;
-    white-space: nowrap;
-    display: none;
-}
-
-div.divDone a {
-    display: inline;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-}
-
-.me {
-    width: 30%;
+#circularPortrait {
+    width: 35%;
     height: auto;
     display: block;
-    margin-bottom: -50px;
+    margin-bottom: -12%;
     margin-left: auto;
     margin-right: auto;
     border: 6px solid white;
     box-shadow: 0px 5px 3px black;
 }
 
-.contentbox {
-    padding: 20px;
-    padding-top: 50px;
+
+#resumeLink {
+    text-align: center;
 }
 
-#personal {
-    font-size: 150%;
+#resumeLink>h4 {
+    line-height: 0.75;
 }
 
-#age {
-    color: orangered
-}
 
-.hHeader {
+.sectionHeader {
     border-bottom: 1px black;
     border-bottom-style: dashed;
 }
@@ -75,28 +51,38 @@ body::-webkit-scrollbar {
     background-color: transparent;
 }
 
-.divHear {
+#contact {
     text-align: justify;
 }
 
-.divHear i {
+#contact i {
     margin-top: 5px;
     display: inline-block;
     transition: 0.3s;
     padding: 3px;
 }
 
-.divHear i:hover {
+#contact i:hover {
     text-shadow: 0px 1px 2px grey;
 }
 
-.divHear:after {
+#contact:after {
     content: "";
     display: inline-block;
     width: 80%;
     height: 0;
 }
 
-.ts-createdSlides:hover {
-    cursor:pointer
+.slide:hover {
+    cursor: pointer
+}
+
+.slide>img {
+    max-width: 100%;
+}
+
+#center {
+    margin: auto;
+    padding-top: 30px;
+    max-width: 450px;
 }
