@@ -63,6 +63,12 @@
                                 <p>Disney Parks Fuel-Rod Locator for Android</p>
                             </div>
                         </div>
+                        <div class="w3-card-4 w3-round-large slide" onclick="outgoing('https://thomas.stoeckert.us/getliftoff')">
+                            <img src="images/pebble-liftoff.png">
+                            <div class="w3-container w3-center">
+                                <p>Liftoff for Pebble</p>
+                            </div>
+                        </div>
                         <div class="w3-card-4 w3-round-large slide" onclick="outgoing('https://apps.rebble.io/en_US/application/5939fe5d0dfc32af610003df')">
                             <img src="images/pebble-frl.png">
                             <div class="w3-container w3-center">
@@ -75,18 +81,20 @@
                                 <p>This Site</p>
                             </div>
                         </div>
-                        <div class="w3-card-4 w3-round-large slide" onclick="outgoing('https://thomas.stoeckert.us/getliftoff')">
-                            <img src="images/pebble-liftoff.png">
-                            <div class="w3-container w3-center">
-                                <p>Liftoff for Pebble</p>
-                            </div>
-                        </div>
                         <div class="w3-card-4 w3-round-large slide" onclick="outgoing('https://apps.rebble.io/en_US/application/575899eb9bcb701a3e000004')">
                             <img src="images/pebble-time-cruise.png">
                             <div class="w3-container w3-center">
                                 <p>Time Cruise for Pebble</p>
                             </div>
                         </div>
+                        
+                        <div class="w3-card-4 w3-round-large slide" onclick="outgoing('https://thomas.stoeckert.us/pick-a-picture')">
+                            <img src="images/p-a-p.png">
+                            <div class="w3-container w3-center">
+                                <p>Pick - A - Picture</p>
+                            </div>
+                        </div>
+
                         <div class="w3-card-4 w3-round-large slide" onclick="outgoing('https://thomas.stoeckert.us/kattrack')">
                             <img src="images/kattrack.png">
                             <div class="w3-container w3-center">
@@ -117,17 +125,10 @@
     </div>
     <script src="jquery-3.2.1.min.js"></script>
     <script>
-        // Javascript is stupid. (!window.localStorage) is false. (window.localStorage) is the storage object.
-        //  consequently, I have to double false it.
-        var localStorageStatus = !(!window.localStorage);
         var currentSlideIndex;
 
         function main(){
-            if(localStorage.getItem("slide") === null || !localStorageStatus){
-                currentSlideIndex = 1;
-            } else {
-                currentSlideIndex = parseInt(localStorage.getItem("slide"));
-            }
+            currentSlideIndex = 1;
             viewSlide(currentSlideIndex);
         }
 
@@ -143,9 +144,6 @@
 
         function scrollSlideshowByN(n) {
             viewSlide(currentSlideIndex += n);
-            if(localStorageStatus){
-                localStorage.setItem("slide", currentSlideIndex);
-            }
         }
 
         function viewSlide(n) {
