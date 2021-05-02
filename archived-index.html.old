@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <script src="https://use.fontawesome.com/18e879b086.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thomas Stoeckert</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-103025784-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-103025784-3');
+    </script>
+    <!-- Google Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-103025784-3', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+    <script>
+    </script>
+    </head>
+
+<body>
+    <div id="backgroundImageContainer" class="w3-display-container w3-text-white">
+        <div class="w3-animate-opacity" id="center">
+            <img src="https://github.com/thomasstoeckert.png" class="w3-circle" id="circularPortrait" />
+            <div class="w3-card w3-white w3-round-large" id="content">
+                <h1 class="w3-center">Thomas Allen Stoeckert</h1>
+
+                <a id="resumeLink" onclick="outgoing('https://thomas.stoeckert.us/resume.pdf')"><h4>download resume</h4></a>
+                
+                <h3 class="sectionHeader">I've made</h3>
+                <div class="w3-container">
+                    <div class="w3-content w3-display-container">
+                        <!-- #region Slides-->
+                        <div class="w3-card-4 w3-round-large slide" onclick="outgoing('https://play.google.com/store/apps/details?id=us.stoeckert.thomas.logride')">
+                            <img src="images/logride.png">
+                            <div class="w3-container w3-center">
+                                <p>LogRide for Android</p>
+                            </div>
+                        </div>
+                        <div class="w3-card-4 w3-round-large slide" onclick="outgoing('https://github.com/thomasstoeckert/MagicRadio')">
+                            <img src="images/magic-radio.jpg">
+                            <div class="w3-container w3-center">
+                                <p>The MagicRadio</p>
+                            </div>
+                        </div>
+                        <div class="w3-card-4 w3-round-large slide" onclick="outgoing('https://www.shapeways.com/product/TESECP2SG/magicband-holder-20mm-strap-model')">
+                            <img src="images/mbh.png">
+                            <div class="w3-container w3-center">
+                                <p>MagicBand Holder</p>
+                            </div>
+                        </div>
+                        <div class="w3-card-4 w3-round-large slide" onclick="outgoing('https://thomas.stoeckert.us/getliftoff')">
+                            <img src="images/pebble-liftoff.png">
+                            <div class="w3-container w3-center">
+                                <p>Liftoff for Pebble</p>
+                            </div>
+                        </div>
+                        <div class="w3-card-4 w3-round-large slide" onclick="outgoing('https://thomas.stoeckert.us')">
+                            <img src="images/recursion.png">
+                            <div class="w3-container w3-center">
+                                <p>This Site</p>
+                            </div>
+                        </div>
+                        <div class="w3-card-4 w3-round-large slide" onclick="outgoing('https://apps.rebble.io/en_US/application/575899eb9bcb701a3e000004')">
+                            <img src="images/pebble-time-cruise.png">
+                            <div class="w3-container w3-center">
+                                <p>Time Cruise for Pebble</p>
+                            </div>
+                        </div>
+                        
+                        <div class="w3-card-4 w3-round-large slide" onclick="outgoing('https://thomas.stoeckert.us/pick-a-picture')">
+                            <img src="images/p-a-p.png">
+                            <div class="w3-container w3-center">
+                                <p>Pick - A - Picture</p>
+                            </div>
+                        </div>
+
+                        <div class="w3-card-4 w3-round-large slide" onclick="outgoing('https://thomas.stoeckert.us/kattrack')">
+                            <img src="images/kattrack.png">
+                            <div class="w3-container w3-center">
+                                <p>Katharine Quotes</p>
+                            </div>
+                        </div>
+                        <div class="w3-card-4 w3-round-large slide" onclick="outgoing('https://apps.rebble.io/en_US/application/569a3c6f8b7337e75400003e')">
+                            <img src="images/pebble-kattrack.png">
+                            <div class="w3-container w3-center">
+                                <p>Katharine Quotes for Pebble</p>
+                            </div>
+                        </div>
+                        <!-- #endregion -->
+                        <button class="w3-button w3-black w3-display-left w3-opacity-min" onclick="scrollSlideshowByN(-1)">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right w3-opacity-min" onclick="scrollSlideshowByN(1)">&#10095;</button>
+                    </div>
+                </div>
+
+                <h3 class="sectionHeader">I'd like to hear from you</h3>
+                <div class="w3-container ts-accordion-open" id="contact">
+                    <a onclick="outgoing('https://github.com/thomasstoeckert')"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                    <a onclick="outgoing('https://www.instagram.com/thomas.stoeckert')"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                    <a onclick="outgoing('mailto:thomas@stoeckert.us?Subject=From%20Your%20Site')"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+                    <a onclick="outgoing('https://www.linkedin.com/in/thomasstoeckert/')"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script>
+        var currentSlideIndex;
+
+        function main(){
+            currentSlideIndex = 1;
+            viewSlide(currentSlideIndex);
+        }
+
+        function outgoing(url){
+            ga('send', 'event', {
+                eventCategory: 'Outbound Link',
+                eventAction: "click",
+                eventLabel: url,
+                transport: 'beacon'
+            });
+            window.open(url, "_blank");
+        }
+
+        function scrollSlideshowByN(n) {
+            viewSlide(currentSlideIndex += n);
+        }
+
+        function viewSlide(n) {
+            var i;
+            var slides = $(".slide");
+            if (n > slides.length) {
+                currentSlideIndex = 1
+            }
+            if (n < 1) {
+                currentSlideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[currentSlideIndex - 1].style.display = "block";
+        }
+
+        main();
+
+        
+    </script>
+</body>
+
+</html>
